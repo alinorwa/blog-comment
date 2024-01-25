@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Data</title>
+    <!-- Include htmx library -->
+    <script src="https://unpkg.com/htmx.org@1.7.0/dist/htmx.min.js"></script>
+  </head>
+  <body>
+    <!-- Add a data-hx-get attribute to the div to specify the URL to fetch data from -->
+    <div
+      id="dataContainer"
+      data-hx-get="http://127.0.0.1:8000/"
+      hx-trigger="load"
+    >
+      <!-- The content will be replaced by the fetched data -->
+      <h1 data-hx-swap="innerHTML"></h1>
+      <p data-hx-swap="innerHTML"></p>
+      <!-- Add more HTML elements to display other data properties -->
+    </div>
+  </body>
+</html>
