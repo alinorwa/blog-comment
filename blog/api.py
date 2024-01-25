@@ -264,7 +264,7 @@ def update_delete_nested_comment(request, nested_comment_id):
         nested_comment.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)    
 
-# =========================================================== end the nested comment d
+# =========================================================== end the nested comment 
 
 
 
